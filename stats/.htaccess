@@ -1,0 +1,7 @@
+AuthName "biotec.pro.br statistics"
+AuthType Basic
+AuthUserFile /home/biotec/.stats-htpasswd
+require valid-user
+<Files .stats-htpasswd>
+deny from all
+</Files>
